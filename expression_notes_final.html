@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expression Notes</title>
+<style>
+body{
+font-family:Helvetica,Arial,sans-serif;
+background:white;
+color:#111;
+margin:0;
+padding:0;
+line-height:1.7;
+}
+.container{
+max-width:1000px;
+margin:auto;
+padding:30px;
+}
+h1{
+font-size:56px;
+margin-bottom:10px;
+}
+.section{
+border:2px solid #111;
+border-radius:20px;
+padding:25px;
+margin-bottom:28px;
+}
+.label{
+display:inline-block;
+border:1px solid #111;
+border-radius:999px;
+padding:6px 14px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:12px;
+}
+.romaji{
+font-size:42px;
+font-weight:800;
+margin-top:15px;
+}
+.english{
+font-size:20px;
+margin-top:10px;
+}
+.hiragana{
+font-size:14px;
+color:#666;
+margin-top:4px;
+}
+.explain{
+margin-top:18px;
+padding:16px;
+background:#fafafa;
+border-left:4px solid #111;
+}
+.jp{
+margin-top:10px;
+font-size:14px;
+color:#555;
+}
+.card{
+border:1px solid #ccc;
+border-radius:14px;
+padding:18px;
+margin-top:20px;
+}
+button{
+width:100%;
+margin-top:10px;
+padding:14px;
+border-radius:12px;
+border:1px solid #111;
+background:white;
+font-family:Helvetica,Arial,sans-serif;
+font-size:17px;
+cursor:pointer;
+}
+button:hover{
+background:#f5f5f5;
+}
+.feedback{
+margin-top:15px;
+padding:12px;
+border-radius:10px;
+display:none;
+font-weight:bold;
+}
+.correct{
+background:#eaf8ea;
+border:1px solid #77aa77;
+}
+.wrong{
+background:#fff0f0;
+border:1px solid #cc8888;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Expression Notes</h1>
+
+<div class="section">
+
+<div class="label">MISSION 1</div>
+
+<div class="romaji">ANŌ</div>
+
+<div class="english">
+Excuse me... / Um...
+</div>
+
+<div class="hiragana">
+あのう
+</div>
+
+<div class="explain">
+
+<b>Expression Explanation</b>
+
+<br><br>
+
+“ANŌ” is a soft cushion word used before speaking to someone.
+
+<br><br>
+
+It helps your speech sound more polite and less direct.
+
+<br><br>
+
+It is often used:
+
+<ul>
+<li>before asking questions</li>
+<li>before interrupting someone</li>
+<li>before talking to strangers</li>
+</ul>
+
+<div class="jp">
+相手に話しかける前に使うクッション言葉です。<br>
+失礼に聞こえにくくします。
+</div>
+
+</div>
+
+<div class="card">
+
+<b>When should you use “ANŌ”?</b>
+
+<button onclick="check(this,true)">
+Before politely asking someone a question.
+</button>
+
+<button onclick="check(this,false)">
+When shouting angrily.
+</button>
+
+<div class="feedback"></div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">MISSION 2</div>
+
+<div class="romaji">SŌ DESU KA ⤴</div>
+
+<div class="english">
+Really?
+</div>
+
+<div class="hiragana">
+そうですか？
+</div>
+
+<div class="romaji">SŌ DESU KA ⤵</div>
+
+<div class="english">
+I see.
+</div>
+
+<div class="hiragana">
+そうですか
+</div>
+
+<div class="explain">
+
+<b>Expression Explanation</b>
+
+<br><br>
+
+Japanese changes meaning through intonation.
+
+<br><br>
+
+Rising intonation (⤴) means surprise or confirmation.
+
+<br><br>
+
+Falling intonation (⤵) means understanding.
+
+<div class="jp">
+イントネーションで意味が変わります。<br>
+上げると驚き、下げると納得になります。
+</div>
+
+</div>
+
+<div class="card">
+
+<b>Which one means “I see”?</b>
+
+<button onclick="check(this,false)">
+SŌ DESU KA ⤴
+</button>
+
+<button onclick="check(this,true)">
+SŌ DESU KA ⤵
+</button>
+
+<div class="feedback"></div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">MISSION 3</div>
+
+<div class="romaji">KYŌSHI</div>
+
+<div class="english">
+Teacher
+</div>
+
+<div class="hiragana">
+きょうし
+</div>
+
+<div class="explain">
+
+<b>Expression Explanation</b>
+
+<br><br>
+
+“SENSEE” is an honorable title.
+
+<br><br>
+
+Using it for yourself may sound arrogant.
+
+<br><br>
+
+When introducing your own profession, “KYŌSHI” sounds more natural and humble.
+
+<div class="jp">
+「せんせい」は敬称です。<br>
+自分に使うと少し偉そうに聞こえる場合があります。<br>
+自分の職業紹介では「きょうし」が自然です。
+</div>
+
+</div>
+
+<div class="card">
+
+<b>Which expression is more natural?</b>
+
+<button onclick="check(this,false)">
+WATASHI WA SENSEE DESU
+</button>
+
+<button onclick="check(this,true)">
+WATASHI WA KYŌSHI DESU
+</button>
+
+<div class="feedback"></div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">MISSION 4</div>
+
+<div class="romaji">NI-MAN EN</div>
+
+<div class="english">
+20,000 yen
+</div>
+
+<div class="hiragana">
+にまんえん
+</div>
+
+<div class="explain">
+
+<b>Expression Explanation</b>
+
+<br><br>
+
+Japanese counts large numbers differently from English.
+
+<br><br>
+
+English groups numbers by 1,000.
+
+<br><br>
+
+Japanese groups numbers by 10,000.
+
+<br><br>
+
+10,000 = MAN
+
+<div class="jp">
+英語は1000単位で区切ります。<br>
+日本語は10000単位（まん）で区切ります。
+</div>
+
+</div>
+
+<div class="card">
+
+<b>20,000 yen is...</b>
+
+<button onclick="check(this,true)">
+NI-MAN EN
+</button>
+
+<button onclick="check(this,false)">
+NIJŪ-SEN EN
+</button>
+
+<div class="feedback"></div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="label">MISSION 5</div>
+
+<div class="romaji">ONEGAI SHIMASU</div>
+
+<div class="english">
+Please...
+</div>
+
+<div class="hiragana">
+おねがいします
+</div>
+
+<div class="explain">
+
+<b>Expression Explanation</b>
+
+<br><br>
+
+“KUDASAI” is used for requesting concrete items.
+
+<br><br>
+
+“ONEGAI SHIMASU” sounds more polite and more natural in restaurants.
+
+<br><br>
+
+It can also be used for services and abstract requests.
+
+<div class="jp">
+「ください」は具体的な物に使います。<br>
+「おねがいします」は少し丁寧で、レストランで自然です。
+</div>
+
+</div>
+
+<div class="card">
+
+<b>Which expression sounds more polite?</b>
+
+<button onclick="check(this,false)">
+KUDASAI
+</button>
+
+<button onclick="check(this,true)">
+ONEGAI SHIMASU
+</button>
+
+<div class="feedback"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+function check(button,correct){
+
+const card = button.parentElement;
+const feedback = card.querySelector('.feedback');
+
+feedback.style.display='block';
+
+if(correct){
+feedback.className='feedback correct';
+feedback.innerHTML='Correct! Mission Clear!';
+}else{
+feedback.className='feedback wrong';
+feedback.innerHTML='Try Again';
+}
+
+}
+</script>
+
+</body>
+</html>
